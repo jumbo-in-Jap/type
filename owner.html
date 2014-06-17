@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-  
+
   <head>
     <meta charset="utf-8">
     <title>タイピング対戦</title>
@@ -10,9 +10,17 @@
     <!-- Le styles -->
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style>
-      /*body { padding-top: 60px; /* 60px to make the container go all the way
-      to the bottom of the topbar }
-      */
+      textarea {
+        width: 100%;
+        height: 200px;
+        overflow: scroll;
+        border-radius: 5px;
+        border: 1px solid #888;
+      }
+      .startBtn {
+        float: right;
+        margin-top: 20px;
+      }
     </style>
     <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -45,15 +53,15 @@
 	    -moz-box-shadow: 0 0 2px #999;
 	    -webkit-box-shadow: 0 0 2px #999;
 	    -webkit-tap-highlight-color:rgba(0,0,0,0);
-	    border-radius: 3px;        /* CSS3草案 */  
-	    -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */  
-	    -moz-border-radius: 3px;   /* Firefox用 */  
+	    border-radius: 3px;        /* CSS3草案 */
+	    -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */
+	    -moz-border-radius: 3px;   /* Firefox用 */
       	background-color:#eeeeee;
       	margin:5px;
       }
     </style>
   </head>
-  
+
   <body>
 	<nav class="navbar navbar-default" role="navigation">
 	  <div class="container-fluid">
@@ -67,7 +75,7 @@
 	      </button>
 	      <a class="navbar-brand" href="#">管理画面</a>
 	    </div>
-	
+
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
@@ -78,8 +86,8 @@
 
 	<!-- container -->
     <div class="container">
-        <input id="mondai" type="text" id="textbox" placeholder="問題文を入力">
-		<button id="start" type="submit" class="btn btn-default">Start</button>
+        <textarea id="mondai" type="text" id="textbox" placeholder="問題文を入力"></textarea>
+		<button id="start" type="submit" class="btn btn-default startBtn">Start</button>
     </div>
 
 
