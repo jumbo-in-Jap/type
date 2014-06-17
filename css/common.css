@@ -57,4 +57,39 @@ h1 {
 	display: none;
 }
 
+#ans {
+	padding: 10px;
+	font-weight: normal;
+	width: 275px;
+	height: 202px;
+	overflow: scroll;
+	color: white;
+	background: black;
+	border: 1px solid #00B2B3;
+	border-radius: 3px;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+
+#users {
+	width: 275px;
+	padding: 10px;
+	color: #00B2B3;
+	background: black;
+	border: 1px solid #00B2B3;
+	border-radius: 3px;
+	letter-spacing: 3px;
+	text-align: center;
+}
+
+.userAnswerArea {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 940px;
+}
+
+.userAnswerBox {
+	margin-left: 15px;
+	float: left;
+}
 
