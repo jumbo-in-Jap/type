@@ -1,10 +1,60 @@
-body
-{
+body {
 	height:100%;
 	width:100%;
-    /*overflow-y: hidden;*/
-    background-color:#f0f2dc;
-    color:#424242;
-    
+	background:black;
+	color:white;
 }
+
+h1 {
+	text-align: center;
+}
+
+.odai {
+	text-align: center;
+}
+
+#ansTxt {
+	margin: 0 auto;
+	width: 890px;
+	font-weight: normal;
+	letter-spacing: 1.5px;
+}
+
+.input-prepend, .inputName {
+	margin: 20px auto;
+	width: 920px;
+}
+
+#textbox, .inputName input {
+	box-sizing: border-box;
+	padding: 10px;
+	margin: 20px auto;
+	width: 920px;
+	border-radius: 5px;
+	border: 3px solid #00B2B3;
+	background: black;
+	color: white;
+	font-size: 17px;
+}
+
+#textbox {
+	height: 300px;
+}
+
+.start {
+	margin: 0 auto;
+	width: 258px;
+	height: 57px;
+	background: url(../images/start.png) no-repeat;
+}
+
+.start:hover {
+	cursor: pointer;
+	background: url(../images/start_on.png) no-repeat;
+}
+
+.secondarea {
+	display: none;
+}
+
 
