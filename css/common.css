@@ -91,5 +91,11 @@ h1 {
 .userAnswerBox {
 	margin-left: 15px;
 	float: left;
+	position: relative;
 }
 
+.win {
+	position: absolute;
+	top: 80px;
+	left: 5px;
+}
