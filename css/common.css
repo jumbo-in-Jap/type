@@ -71,6 +71,7 @@ h1 {
 	font-size: 14px;
 }
 
+
 #users {
 	width: 275px;
 	padding: 10px;
@@ -80,6 +81,18 @@ h1 {
 	border-radius: 3px;
 	letter-spacing: 3px;
 	text-align: center;
+}
+
+.final #ans {
+	width: 430px;
+	height: 430px;
+}
+.final #users {
+	width: 430px;
+}
+.final .win {
+	top: 170px;
+	left: 80px;
 }
 
 .userAnswerArea {
@@ -95,7 +108,12 @@ h1 {
 }
 
 .win {
+	display: none;
 	position: absolute;
 	top: 80px;
 	left: 5px;
 }
+
+
+
+

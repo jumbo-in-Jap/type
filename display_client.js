@@ -18,24 +18,25 @@ ws.onmessage = function(event) {
   var data = JSON.parse(event.data);
   var type = data.type;
   	console.log(data);
-  
+
   if(type === 'login')
   {
   	// ログイン
 	var source   = $("#user-ans-template").html();
 	var template = Handlebars.compile(source);
-	$("#users").append(template(data)).fadeIn(300);  		
-  	
+	$("#users").append(template(data)).fadeIn(300);
+
   }else if(type === 'change')
   {
   	$("#"+data.user+"_text").text(data.text);
-  	
+
   	// 正解判定
   	if(validateMessage(data.text))
   	{
-  		$("#"+data.user+"_area").css("background-color", "#ff0000");
+      // $("#"+data.user+"_area").css("background-color", "#ff0000");
+      $("#"+data.user+"_area .win").css("display", "block");
   	}
-  	
+
   }else if(type === 'start')
   {
   	ansStr = data.text;

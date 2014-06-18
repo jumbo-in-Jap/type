@@ -9,5 +9,6 @@ $(function() {
   // 決勝にする
   $(".title").click(function() {
     $(".title img").attr("src", "images/final.png");
+    $("body").addClass('final');
   });
 })
